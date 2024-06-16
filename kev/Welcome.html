@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+    body {
+      font-family: 'Quicksand', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #000;
+    }
+    .welcome-container {
+      background-color: #222;
+      padding: 40px;
+      border-radius: 4px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.9);
+      text-align: center;
+      max-width: 600px;
+    }
+    .welcome-container h1 {
+      font-size: 2em;
+      color: #0f0;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .welcome-container p {
+      color: #fff;
+      font-size: 1.2em;
+    }
+    .video-container {
+      margin-top: 20px;
+    }
+    .video-container video {
+      width: 80%;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-container">
+    <h1>Welcome!</h1>
+    <p>You have successfully logged in.</p>
+    <div class="video-container">
+      <!-- Embed local video -->
+      <video controls>
+        <source src="v.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</body>
+</html>
